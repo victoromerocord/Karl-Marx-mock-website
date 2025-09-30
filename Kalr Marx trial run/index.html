@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Communist Manifesto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#000000;
+      --text:#333333;
+      --accent:#453f2f;
+      --primary:#7d0101;
+      --primary-hover:#5e0000;
+      --on-primary:#ffffff;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .hero-image { background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; }
+    .nav-link { transition: all 0.3s ease; }
+    .nav-link:hover { color: var(--accent); }
+    .button { transition: all 0.3s ease; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="min-h-screen">
+  <script>AOS.init();</script>
+  <script>feather.replace();</script>
+
+  <nav class="bg-white shadow-md py-4 px-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold text-gray-800">KARL MARX</div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">Home</a>
+        <a href="socialmedia.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">Social Media</a>
+        <a href="Communistman.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">The Communist Manifesto</a>
+      </div>
+      <div class="md:hidden"><i data-feather="menu"></i></div>
+    </div>
+  </nav>
+
+  <div class="hero-image bg-gray-100 py-20">
+    <div class="container mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 m-0">The Communist Manifesto</h1>
+
+      <div class="mt-6 flex items-start gap-6">
+        <p class="text-lg text-gray-600 flex-1">
+        Hi! My name is Karl Marx<br>
+        djncjndjncj,<br>
+        dshcscjsnjkcns<br>
+        jshbhdbchdbhdb<br>
+        and explod <br>
+        world of technology<br>
+        one project at a time.
+        </p>
+        <img src="KarlMarxpicture.webp" alt="Karl Marx" class="max-w-full h-auto object-contain self-start w-64 md:w-80 lg:w-[28rem] rounded-none">
+      </div>
+
+      <div class="flex flex-wrap gap-4 mt-8">
+        <a href="socialmedia.html" class="button bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--on-primary)] px-6 py-3 rounded-md">Social Media</a>
+        <a href="Communistman.html" class="button bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--on-primary)] px-6 py-3 rounded-md">The Communist Manifesto</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-xl font-bold">Karl Marx</h3>
+          <p class="text-gray-400">Philosopher, Economist, Revolutionary</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400"><p></p></div>
+    </div>
+  </footer>
+</body>
+</html>
