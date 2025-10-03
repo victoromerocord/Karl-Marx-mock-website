@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karl Marx - The Communist Manifesto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#000000;
+      --text:#333333;
+      --accent:#453f2f;
+      --primary:#7d0101;
+      --primary-hover:#5e0000;
+      --on-primary:#ffffff;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .hero-image { background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; }
+    .nav-link { transition: all 0.3s ease; }
+    .nav-link:hover { color: var(--accent); }
+    .button { transition: all 0.3s ease; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .quote-card { 
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-left: 4px solid var(--primary);
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0.5rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--primary);
+    }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: 0.25rem;
+      top: 0.5rem;
+      width: 1rem;
+      height: 1rem;
+      background: var(--primary);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <script>feather.replace();</script>
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold text-gray-800">KARL MARX</div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">Home</a>
+        <a href="socialmedia.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">Social Media</a>
+        <a href="Communistman.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">The Communist Manifesto</a>
+      </div>
+      <div class="md:hidden"><i data-feather="menu"></i></div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-image bg-gray-100 py-20">
+    <div class="container mx-auto px-6">
+      <div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 m-0">The Communist Manifesto</h1>
+        <p class="text-lg text-gray-600 mt-4 max-w-3xl">A revolutionary document that changed the course of history and continues to influence political thought today.</p>
+      </div>
+
+      <div class="mt-12 flex items-start gap-8">
+        <div class="flex-1">
+          <p class="text-lg text-gray-600 mb-6">
+            <p class="text-2xl font- text-gray-800 mb-6">
+              I am Karl Marx — philosopher, economist, and revolutionary thinker. 
+              Born in 1818 in Trier, Germany, I dedicated my life to understanding 
+              the contradictions of capitalism and envisioning a more just society.<br>
+
+             <br> Millions work hard each day, yet only a few enjoy the rewards. This injustice calls not just to reason but to our shared humanity. History shows that class struggle shapes nations, and only by confronting inequality can progress be made.<br>
+             <br>
+            </p>
+            
+          <div class="flex flex-wrap gap-4">
+            <a href="Communistman.html" class="button bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--on-primary)] px-8 py-4 rounded-md text-lg">Read The Manifesto</a>
+            <a href="socialmedia.html" class="button bg-white hover:bg-gray-100 text-gray-800 border-2 border-[var(--primary)] hover:border-[var(--primary-hover)] px-8 py-4 rounded-md text-lg">Social Media</a>
+          </div>
+        </div>
+        <img src="KarlMarxpicture.webp" alt="Karl Marx" class="max-w-full h-auto object-contain self-start w-64 md:w-80 lg:w-[28rem] rounded-lg shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">The Life of Karl Marx</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">From a young philosopher to one of history's most influential thinkers</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">Early Life & Education</h3>
+          <p class="text-gray-600 mb-6">
+            Born on May 5, 1818, in Trier, Prussia (now Germany), Marx was the son of a successful lawyer. He studied law and philosophy at the University of Bonn and later at the University of Berlin, where he was deeply influenced by the philosophy of Hegel.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Marx's early writings reveal a brilliant mind grappling with fundamental questions about society, economics, and human nature. His collaboration with Friedrich Engels would prove to be one of the most fruitful partnerships in intellectual history.
+          </p>
+        </div>
+        <div class="space-y-6">
+     
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Historical Context Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Historical Context</h2>
+        <p class="text-xl text-gray-600">The world that shaped Marx's revolutionary ideas</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">The Industrial Revolution</h3>
+          <p class="text-gray-600 mb-6">
+            The 19th century was marked by rapid industrialization across Europe. Factories sprang up in cities, drawing rural workers into urban centers. While industrialists amassed enormous wealth, workers toiled in dangerous conditions for minimal wages.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Marx witnessed firsthand the exploitation of the working class—children working 12-hour days, families living in squalid tenements, and workers with no rights or protections. This stark inequality became the foundation of his critique of capitalism.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">Revolutionary Times</h3>
+          <p class="text-gray-600 mb-6">
+            The 1840s were a period of political upheaval across Europe. Revolutionary movements in France, Germany, and other countries sought to overthrow monarchies and establish more democratic forms of government.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Marx and Engels wrote The Communist Manifesto during this turbulent period, intending it as a call to action for workers across Europe. Though the revolutions of 1848 were largely suppressed, the ideas in the Manifesto would continue to inspire movements for generations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+ 
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
