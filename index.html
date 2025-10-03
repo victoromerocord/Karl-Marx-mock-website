@@ -53,10 +53,10 @@
         </p>
       </div>
 
-      <!-- Text + Image row -->
-      <div class="mt-12 flex flex-col lg:flex-row items-start gap-8">
+      <!-- Text then Image -->
+      <div class="mt-12 space-y-8">
         <!-- TEXT -->
-        <div class="order-1 lg:order-1 flex-1 max-w-2xl">
+        <div class="max-w-2xl mx-auto">
           <p class="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-6 leading-relaxed">
             I am Karl Marx — philosopher, economist, and revolutionary thinker.
             Born in 1818 in Trier, Germany, I dedicated my life to understanding
@@ -68,20 +68,21 @@
             History shows that class struggle shapes nations, and only by confronting
             inequality can progress be made.
           </p>
-
-          <div class="flex flex-wrap gap-4">
-            <a href="Communistman.html" class="button bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--on-primary)] px-8 py-4 rounded-md text-lg">Read The Manifesto</a>
-            <a href="socialmedia.html" class="button bg-white hover:bg-gray-100 text-gray-800 border-2 border-[var(--primary)] hover:border-[var(--primary-hover)] px-8 py-4 rounded-md text-lg">Social Media</a>
-          </div>
         </div>
 
-        <!-- IMAGE -->
-        <div class="order-2 lg:order-2 lg:basis-[28rem] shrink-0 w-full lg:w-auto">
+        <!-- IMAGE + BUTTONS -->
+        <div class="flex flex-col items-center space-y-6">
           <img
             src="KarlMarxpicture.webp"
             alt="Karl Marx"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-[28rem] h-auto object-contain mx-auto lg:mx-auto rounded-lg shadow-xl"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain rounded-lg shadow-xl"
           />
+
+          <!-- Buttons aligned with image -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="Communistman.html" class="button bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--on-primary)] px-8 py-4 rounded-md text-lg">Read The Manifesto</a>
+            <a href="socialmedia.html" class="button bg-white hover:bg-gray-100 text-gray-800 border-2 border-[var(--primary)] hover:border-[var(--primary-hover)] px-8 py-4 rounded-md text-lg">Social Media</a>
+          </div>
         </div>
       </div>
     </div>
@@ -107,7 +108,7 @@
         </div>
 
         <div class="space-y-6">
-          <!-- (Optional) Add a timeline or portrait card here -->
+          <!-- optional right column content -->
         </div>
       </div>
     </div>
@@ -135,4 +136,16 @@
         <div>
           <h3 class="text-2xl font-bold text-gray-800 mb-6">Revolutionary Times</h3>
           <p class="text-gray-600 mb-6">
-            The 1840s were a period of political upheaval across Europe. Revolutionary movements in Fr
+            The 1840s were a period of political upheaval across Europe. Revolutionary movements in France, Germany, and other countries sought to overthrow monarchies and establish more democratic forms of government.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Marx and Engels wrote The Communist Manifesto during this turbulent period, intending it as a call to action for workers across Europe. Though the revolutions of 1848 were largely suppressed, the ideas in the Manifesto would continue to inspire movements for generations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>feather.replace();</script>
+</body>
+</html>
