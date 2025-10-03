@@ -10,8 +10,29 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f3f4f6;
+      --text:#374151;
+      --accent:#7d0101;
+      --primary:#7d0101;
+      --primary-hover:#5e0000;
+      --on-primary:#ffffff;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .nav-link { transition: all 0.3s ease; }
+    .nav-link:hover { color: var(--accent); }
+    .button { transition: all 0.3s ease; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+  </style>
 </head>
-<body class="min-h-screen bg-gray-100">
+<body class="min-h-screen">
   <script>AOS.init();</script>
   <script>feather.replace();</script>
 
@@ -20,28 +41,27 @@
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-xl font-bold text-gray-800">KARL MARX</div>
       <div class="hidden md:flex space-x-8">
-        <a href="index.html" class="nav-link text-gray-700 hover:text-yellow-700">Home</a>
-        <a href="socialmedia.html" class="nav-link text-gray-700 hover:text-yellow-700">Social Media</a>
-        <a href="Communistman.html" class="nav-link text-gray-700 hover:text-yellow-700">The Communist Manifesto</a>
+        <a href="index.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">Home</a>
+        <a href="socialmedia.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">Social Media</a>
+        <a href="Communistman.html" class="nav-link text-gray-700 hover:text-[var(--accent)]">The Communist Manifesto</a>
       </div>
     </div>
   </nav>
 
   <!-- Page Content -->
   <section class="container mx-auto px-6 py-12">
-    <h1 class="text-4xl font-bold text-gray-800 mb-6">The Communist Manifesto</h1>
-    <p class="text-lg text-gray-700 mb-6">
-      Written by Karl Marx and Friedrich Engels in 1848, <em>The Communist Manifesto</em>  
-      is one of the most influential political documents in history.  
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">The Communist Manifesto</h1>
+    <p class="text-sm text-gray-500 mb-8">
+      Written by Karl Marx and Friedrich Engels in 1848, <em>
     </p>
-    <blockquote class="border-l-4 border-red-600 pl-4 italic text-gray-600 mb-6">
-      “Workers of the world unite; you have nothing to lose but your chains.”
+    <blockquote class="border-l-4 border-[var(--primary)] pl-4 italic text-gray-600 mb-6">
+      "Workers of the world unite; you have nothing to lose but your chains."
     </blockquote>
     <p class="text-gray-700 mb-6">
       The manifesto outlines the theory of class struggle and the problems of capitalism,  
       and calls for a revolutionary movement towards communism.  
     </p>
-    <a href="#" class="button bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md">
+    <a href="https://www.marxists.org/archive/marx/works/1848/communist-manifesto/" target="_blank" class="button bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--on-primary)] px-6 py-3 rounded-md">
       Read the Full Manifesto
     </a>
   </section>
